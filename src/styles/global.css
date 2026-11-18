@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme{
+ --color-ivory:#F9F6F0;--color-cream:#F3EEE5;--color-gold:#C5A66A;--color-softgold:#D8C69A;
+ --color-ink:#292722;--color-mute:#88847D;--color-petal:#F5B7C9;
+ --font-serif:"Cormorant Garamond",Georgia,serif;--font-display:"Playfair Display",Georgia,serif;
+ --font-sans:"DM Sans",system-ui,sans-serif;--font-script:"Great Vibes",cursive;
+}
+html{scroll-behavior:smooth}
+body{background:var(--color-ivory);color:var(--color-ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.eyebrow{font-family:var(--font-sans);letter-spacing:.35em;font-size:.68rem;text-transform:uppercase;color:var(--color-gold)}
+.script{font-family:var(--font-script);color:var(--color-gold)}
+.card{background:#fff;border:1px solid color-mix(in srgb,var(--color-gold) 45%,transparent);border-radius:1.5rem;box-shadow:0 20px 50px -30px rgba(41,39,34,.25)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.8rem;border:1px solid var(--color-gold);border-radius:999px;color:var(--color-ink);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;transition:.4s}
+.btn:hover{background:var(--color-gold);color:#fff}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;scroll-behavior:auto!important}}
